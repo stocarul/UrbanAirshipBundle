@@ -1,0 +1,11 @@
+bin
+vendor
+
+composer.phar
+composer.lock
+
+parameters.yml
+
+*.swo
+*.swp
+*_

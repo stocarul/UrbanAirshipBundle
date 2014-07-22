@@ -1,0 +1,40 @@
+{
+    "name" : "stocarul/urban-airship-bundle",
+    "description" : "An Urban Airship sdk bundle",
+    "type" : "symfony-bundle",
+
+    "authors" : [{
+        "name" : "Cosmin-Mihai Tutunaru",
+        "email" : "cosmin@tutunaru.ro"
+    }],
+
+    "keywords" : [
+        "urban airship sdk"
+    ],
+
+    "license" : [
+        "MIT"
+    ],
+
+    "require" : {
+        "php": ">=5.4.0",
+        "sensio/framework-extra-bundle": "~3.0",
+        "urbanairship/urbanairship": "0.1.3"
+    },
+
+    "require-dev": {
+        "symfony/framework-bundle": "~2.2",
+        "symfony/security-bundle": "~2.2",
+        "symfony/twig-bundle": "~2.2",
+        "symfony/finder": "~2.2",
+        "phpunit/phpunit": "3.7.*"
+    },
+
+    "autoload" : {
+        "psr-0" : {
+            "Stocarul\\UrbanAirshipBundle" : ""
+        }
+    },
+
+    "target-dir" : "Stocarul/UrbanAirshipBundle"
+}
