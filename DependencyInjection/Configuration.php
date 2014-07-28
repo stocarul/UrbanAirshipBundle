@@ -20,6 +20,13 @@ class Configuration implements ConfigurationInterface
         $treeBuilder = new TreeBuilder();
         $rootNode = $treeBuilder->root('stocarul_urbanairship');
 
+        $rootNode
+            ->children()
+                ->scalarNode('app_key')->isRequired()->end()
+                ->scalarNode('app_secret')->isRequired()->end()
+            ->end()
+        ;
+
         return $treeBuilder;
     }
 }
