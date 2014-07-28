@@ -32,7 +32,7 @@ class StocarulUrbanAirshipExtensionTest extends \PHPUnit_Framework_TestCase
     public function testLoadThrowsExceptionIfAppKeyNotSet()
     {
         $configs = array(
-            'stocarul_urbanairship' => array(
+            'stocarul_urban_airship' => array(
                 'app_secret' => 'test_app_secret',
             ),
         );
@@ -50,7 +50,7 @@ class StocarulUrbanAirshipExtensionTest extends \PHPUnit_Framework_TestCase
     public function testLoadThrowsExceptionIfAppSecretNotSet()
     {
         $configs = array(
-            'stocarul_urbanairship' => array(
+            'stocarul_urban_airship' => array(
                 'app_key' => 'test_app_key',
             ),
         );
@@ -67,7 +67,7 @@ class StocarulUrbanAirshipExtensionTest extends \PHPUnit_Framework_TestCase
     public function testLoadPass()
     {
         $configs = array(
-            'stocarul_urbanairship' => array(
+            'stocarul_urban_airship' => array(
                 'app_key' => 'test_app_key',
                 'app_secret' => 'test_app_secret',
             ),

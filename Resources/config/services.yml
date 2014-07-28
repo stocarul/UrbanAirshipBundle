@@ -4,7 +4,7 @@ parameters:
 services:
 
     stocarul_urbanairship.service.airship:
-        class: %stocarul_urbanairship.service.airship.class%
+        class: %stocarul_urban_airship.service.airship.class%
         arguments:
-            - %stocarul_urbanairship.app_key%
-            - %stocarul_urbanairship.app_secret%
+            - %stocarul_urban_airship.app_key%
+            - %stocarul_urban_airship.app_secret%
