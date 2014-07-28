@@ -1,9 +1,9 @@
 parameters:
-    stocarul_urbanairship.service.airship.class: Stocarul\UrbanAirshipBundle\Service\Airship
+    stocarul_urban_airship.service.airship.class: Stocarul\UrbanAirshipBundle\Service\Airship
 
 services:
 
-    stocarul_urbanairship.service.airship:
+    stocarul_urban_airship.service.airship:
         class: %stocarul_urban_airship.service.airship.class%
         arguments:
             - %stocarul_urban_airship.app_key%
