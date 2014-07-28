@@ -34,5 +34,5 @@ public function registerBundles()
 
 stocarul_urbanairship:
     app_key: your_app_key
-    app_secret: your_app_secret
+    app_master_secret: your_app_master_secret
 ```
