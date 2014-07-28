@@ -23,7 +23,7 @@ class StocarulUrbanAirshipExtension extends Extension
         $config = $this->processConfiguration($configuration, $configs);
 
         $container->setParameter('stocarul_urban_airship.app_key', $config['app_key']);
-        $container->setParameter('stocarul_urban_airship.app_secret', $config['app_secret']);
+        $container->setParameter('stocarul_urban_airship.app_master_secret', $config['app_master_secret']);
 
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');

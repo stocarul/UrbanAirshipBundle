@@ -33,7 +33,7 @@ class StocarulUrbanAirshipExtensionTest extends \PHPUnit_Framework_TestCase
     {
         $configs = array(
             'stocarul_urban_airship' => array(
-                'app_secret' => 'test_app_secret',
+                'app_master_secret' => 'test_app_master_secret',
             ),
         );
 
@@ -69,7 +69,7 @@ class StocarulUrbanAirshipExtensionTest extends \PHPUnit_Framework_TestCase
         $configs = array(
             'stocarul_urban_airship' => array(
                 'app_key' => 'test_app_key',
-                'app_secret' => 'test_app_secret',
+                'app_master_secret' => 'test_app_master_secret',
             ),
         );
 

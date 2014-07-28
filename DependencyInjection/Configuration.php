@@ -23,7 +23,7 @@ class Configuration implements ConfigurationInterface
         $rootNode
             ->children()
                 ->scalarNode('app_key')->isRequired()->end()
-                ->scalarNode('app_secret')->isRequired()->end()
+                ->scalarNode('app_master_secret')->isRequired()->end()
             ->end()
         ;
 

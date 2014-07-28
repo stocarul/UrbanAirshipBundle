@@ -7,4 +7,4 @@ services:
         class: %stocarul_urban_airship.service.airship.class%
         arguments:
             - %stocarul_urban_airship.app_key%
-            - %stocarul_urban_airship.app_secret%
+            - %stocarul_urban_airship.app_master_secret%
