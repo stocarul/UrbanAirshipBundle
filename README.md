@@ -1,6 +1,8 @@
 UrbanAirshipBundle
 ==================
 
+[![Build Status](https://travis-ci.org/stocarul/UrbanAirshipBundle.svg?branch=master)](https://travis-ci.org/stocarul/UrbanAirshipBundle)
+
 ## Installation
 
 #### A) Add Stocarul UrbanAirship Bundle to your composer.json
