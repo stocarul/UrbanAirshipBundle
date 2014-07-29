@@ -32,7 +32,7 @@ public function registerBundles()
 ```yaml
 // app/config/config.yml
 
-stocarul_urbanairship:
+stocarul_urban_airship:
     app_key: your_app_key
     app_master_secret: your_app_master_secret
 ```
