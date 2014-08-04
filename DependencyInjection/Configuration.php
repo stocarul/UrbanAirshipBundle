@@ -24,6 +24,12 @@ class Configuration implements ConfigurationInterface
             ->children()
                 ->scalarNode('app_key')->isRequired()->end()
                 ->scalarNode('app_master_secret')->isRequired()->end()
+                ->arrayNode('logger')
+                    ->children()
+                        ->scalarNode('path')->isRequired()->end()
+                        ->scalarNode('level')->defaultValue('DEBUG')->end()
+                    ->end()
+                ->end()
             ->end()
         ;
 

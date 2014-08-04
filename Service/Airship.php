@@ -6,6 +6,11 @@ use UrbanAirship\Airship AS Base;
 use Monolog\Handler\StreamHandler;
 use UrbanAirship\UALog;
 
+/**
+ * Class: Airship
+ *
+ * @see Base
+ */
 class Airship extends Base
 {
     /**

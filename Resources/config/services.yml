@@ -1,8 +1,8 @@
 parameters:
+    stocarul_urban_airship.handler.stream.class: Monolog\Handler\StreamHandler
     stocarul_urban_airship.service.airship.class: Stocarul\UrbanAirshipBundle\Service\Airship
 
 services:
-
     stocarul_urban_airship.service.airship:
         class: %stocarul_urban_airship.service.airship.class%
         arguments:

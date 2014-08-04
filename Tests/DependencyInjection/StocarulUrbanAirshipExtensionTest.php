@@ -77,6 +77,36 @@ class StocarulUrbanAirshipExtensionTest extends \PHPUnit_Framework_TestCase
         $extension = $this->getExtension();
 
         $extension->load($configs, $container);
+
+        $this->assertTrue($container->hasParameter('stocarul_urban_airship.app_key'));
+        $this->assertEquals('test_app_key', $container->getParameter('stocarul_urban_airship.app_key'));
+
+        $this->assertTrue($container->hasParameter('stocarul_urban_airship.app_master_secret'));
+        $this->assertEquals('test_app_master_secret', $container->getParameter('stocarul_urban_airship.app_master_secret'));
+    }
+
+    /**
+     * testLoadWithLoggerPass
+     *
+     */
+    public function testLoadWithLoggerPass()
+    {
+        $configs = array(
+            'stocarul_urban_airship' => array(
+                'app_key' => 'test_app_key',
+                'app_master_secret' => 'test_app_master_secret',
+                'logger' => array(
+                    'path' => 'test_path',
+                ),
+            ),
+        );
+
+        $container = $this->getContainerBuilder();
+        $extension = $this->getExtension();
+
+        $extension->load($configs, $container);
+
+        $this->assertTrue($container->hasDefinition('stocarul_urban_airship.logger'));
     }
 
     /**
