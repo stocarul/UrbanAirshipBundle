@@ -51,6 +51,8 @@ class StocarulUrbanAirshipExtension extends Extension
             $this->levelToMonologConst($configuration['level']),
         ));
 
+        $definition->addTag('stocarul_urban_airship.logger');
+
         return $definition;
     }
 

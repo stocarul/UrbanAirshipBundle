@@ -107,6 +107,11 @@ class StocarulUrbanAirshipExtensionTest extends \PHPUnit_Framework_TestCase
         $extension->load($configs, $container);
 
         $this->assertTrue($container->hasDefinition('stocarul_urban_airship.logger'));
+        $this->assertTrue(
+            $container
+            ->getDefinition('stocarul_urban_airship.logger')
+            ->hasTag('stocarul_urban_airship.logger')
+        );
     }
 
     /**
