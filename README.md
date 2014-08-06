@@ -37,4 +37,9 @@ public function registerBundles()
 stocarul_urban_airship:
     app_key:             your_app_key
     app_master_secret:   your_app_master_secret
+    
+    logger:
+        path:     %kernel.logs_dir%/urbanairship_%kernel.environment%.log
+        level:    DEBUG
+
 ```
