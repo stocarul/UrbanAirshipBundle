@@ -10,7 +10,7 @@ env:
   - SYMFONY_VERSION=2.3.*
   - SYMFONY_VERSION=2.4.*
   - SYMFONY_VERSION=2.5.*
-  - SYMFONY_VERSION=dev-master
+  - SYMFONY_VERSION='dev-master symfony/debug:~2.6@dev symfony/http-kernel:~2.6@dev'
 
 before_script:
   - composer self-update
