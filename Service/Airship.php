@@ -18,7 +18,7 @@ class Airship extends Base
      *
      * @var \Monolog\Handler\StreamHandler[]
      */
-    protected $logHandlers;
+    protected $logHandlers = array();
 
     /**
      * Set a stream handler for logging
@@ -28,7 +28,7 @@ class Airship extends Base
      */
     public function setStreamHandler(StreamHandler $stream)
     {
-        $logHandlers = array($stream);
+        $this->logHandlers = array($stream);
         $this->updateLogHandlers();
     }
 
@@ -39,8 +39,18 @@ class Airship extends Base
      */
     public function addStreamHandler(StreamHandler $stream)
     {
-        $logHandlers[] = $stream;
+        $this->logHandlers[] = $stream;
         $this->updateLogHandlers();
+    }
+
+    /**
+     * getStreamHandler
+     *
+     * @return \Monolog\Handler\StreamHandler[]
+     */
+    public function getStreamHandler()
+    {
+        return $this->logHandlers;
     }
 
     /**
@@ -49,6 +59,6 @@ class Airship extends Base
      */
     protected function updateLogHandlers()
     {
-        UALog::setLogHandlers($this->logHandlers);
+        UALog::setLogHandlers($this->getStreamHandler());
     }
 }
