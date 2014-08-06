@@ -44,7 +44,7 @@ class StocarulUrbanAirshipExtension extends Extension
      */
     protected function buildLogger(array $configuration)
     {
-        $definition = new Definition('%stocarul_urban_airship.handler.stream.class');
+        $definition = new Definition('%stocarul_urban_airship.handler.stream.class%');
 
         $definition->setArguments(array(
             $configuration['path'],
