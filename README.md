@@ -2,6 +2,7 @@ UrbanAirshipBundle
 ==================
 
 [![Build Status](https://travis-ci.org/stocarul/UrbanAirshipBundle.svg?branch=master)](https://travis-ci.org/stocarul/UrbanAirshipBundle)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/bf04abfd-4f54-48a4-8f0f-13d2b1cd53a6/mini.png)](https://insight.sensiolabs.com/projects/bf04abfd-4f54-48a4-8f0f-13d2b1cd53a6)
 
 ## Installation
 
